@@ -1,0 +1,1 @@
+# blueasy.github.io
