@@ -73,6 +73,8 @@ h2 {
   text-transform: uppercase;
   text-align: center;
   color: #ffffff;
+  margin: 0;
+  line-height: 60px;
 }
 h2 span {
   background-color: rgba(70, 80, 88, 0.5);
@@ -204,7 +206,7 @@ p {
 .default_section .row {
   padding-bottom: 78px;
 }
-.col-lg-5 a {
+.just a {
   text-transform: uppercase;
   text-decoration: none;
   color: #353F46;
@@ -214,12 +216,12 @@ p {
   font-weight: bold;
   transition: all 0.3s ease-in-out;
 }
-.col-lg-5 a:hover {
+.just a:hover {
   color: #4bcaff;
   border-color: #4bcaff;
   transition: all 0.3s ease-in-out;
 }
-.col-lg-5 p {
+.just p {
   font-weight: 400;
   font-size: 14px;
   padding-bottom: 30px;
