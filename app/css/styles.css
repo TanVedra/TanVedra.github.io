@@ -9,9 +9,9 @@
   transition: all 0.3s ease-in-out;
 }
 .menu a:hover {
-  color: #4bcaff;
+  color: #4BCAFF;
   text-decoration: none;
-  border-color: #4bcaff;
+  border-color: #4BCAFF;
   transition: all 0.3s ease-in-out;
 }
 .header_3_style {
@@ -54,9 +54,9 @@ header {
   transition: all 0.3s ease-in-out;
 }
 .main_menu a:hover {
-  color: #4bcaff;
+  color: #4BCAFF;
   text-decoration: none;
-  border-color: #4bcaff;
+  border-color: #4BCAFF;
   transition: all 0.3s ease-in-out;
 }
 .main_menu a {
@@ -72,7 +72,7 @@ h2 {
   font-weight: 300;
   text-transform: uppercase;
   text-align: center;
-  color: #ffffff;
+  color: #FFFFFF;
   margin: 0;
   line-height: 60px;
 }
@@ -86,7 +86,7 @@ h2 span {
 }
 /* SERVICES Section */
 .blue_bg {
-  background-color: #4bcaff;
+  background-color: #4BCAFF;
 }
 .white_header {
   font-size: 30px;
@@ -94,7 +94,7 @@ h2 span {
   text-transform: uppercase;
   padding-top: 80px;
   margin-top: 0;
-  color: #ffffff;
+  color: #FFFFFF;
   margin-bottom: 30px;
 }
 .white_header span {
@@ -104,11 +104,11 @@ h2 span {
   border-bottom: 1px solid;
 }
 .white_header span {
-  color: #ffffff;
-  border-color: #ffffff;
+  color: #FFFFFF;
+  border-color: #FFFFFF;
 }
 h4 {
-  color: #ffffff;
+  color: #FFFFFF;
   font-weight: 600;
   font-size: 24px;
   text-transform: uppercase;
@@ -116,7 +116,7 @@ h4 {
   padding-bottom: 20px;
 }
 p {
-  color: #ffffff;
+  color: #FFFFFF;
   font-weight: 600;
   font-size: 12px;
   padding-bottom: 70px;
@@ -125,8 +125,8 @@ p {
 .filter-button {
   text-transform: uppercase;
   text-decoration: none;
-  color: #515f67;
-  background-color: #ffffff;
+  color: #515F67;
+  background-color: #FFFFFF;
   font-size: 14px;
   border: 2px solid rgba(71, 81, 88, 0);
   padding: 10px 18px 10px;
@@ -135,8 +135,8 @@ p {
   margin: 86px 0px 80px 6px;
 }
 .filter-button:hover {
-  color: #4bcaff;
-  border-color: #4bcaff;
+  color: #4BCAFF;
+  border-color: #4BCAFF;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
 }
@@ -154,7 +154,7 @@ p {
   text-transform: uppercase;
   padding-top: 80px;
   margin-top: 0;
-  color: #515f67;
+  color: #515F67;
 }
 .black_header span {
   font-size: 30px;
@@ -163,8 +163,8 @@ p {
   border-bottom: 1px solid;
 }
 .black_header span {
-  color: #515f67;
-  border-color: #515f67;
+  color: #515F67;
+  border-color: #515F67;
 }
 .block_img {
   margin-bottom: 32px;
@@ -217,8 +217,8 @@ p {
   transition: all 0.3s ease-in-out;
 }
 .just a:hover {
-  color: #4bcaff;
-  border-color: #4bcaff;
+  color: #4BCAFF;
+  border-color: #4BCAFF;
   transition: all 0.3s ease-in-out;
 }
 .just p {
@@ -228,11 +228,11 @@ p {
   line-height: 22px;
 }
 video {
-  margin-top: 50px;
+  margin-top: 100px;
 }
 /* TWITTER Section */
 .fa-twitter {
-  color: #ffffff;
+  color: #FFFFFF;
   font-size: 30px;
   padding-top: 80px;
 }
@@ -244,7 +244,7 @@ video {
 .myriad a {
   font-family: "Segoe UI", "Open Sans", sans-serif;
   font-weight: 600;
-  color: #ffffff;
+  color: #FFFFFF;
   text-decoration: none;
 }
 /* WHO IS JOHN DOE? Section */
@@ -263,21 +263,21 @@ video {
   line-height: 22px;
 }
 .second_photo i {
-  color: #ffffff;
+  color: #FFFFFF;
   font-size: 30px;
   padding: 15px;
   margin: 10px 18px 0px 0px;
-  border: 2px solid #ffffff;
+  border: 2px solid #FFFFFF;
   transition: all 0.3s ease-in-out;
 }
 .second_photo i:hover {
-  color: #4bcaff;
-  border-color: #4bcaff;
+  color: #4BCAFF;
+  border-color: #4BCAFF;
   transition: all 0.3s ease-in-out;
 }
 /* TESTIMONIALS Section */
 p.bitter {
-  color: #515f67;
+  color: #515F67;
   font-family: 'Bitter', serif;
   font-size: 72px;
   padding-top: 60px;
@@ -285,13 +285,13 @@ p.bitter {
   margin-bottom: 0px;
 }
 blockquote {
-  color: #515f67;
+  color: #515F67;
   font-size: 28px;
   font-weight: 300;
   line-height: 50px;
 }
 blockquote footer {
-  color: #4bcaff;
+  color: #4BCAFF;
   font-size: 14px;
   font-weight: bold;
 }
@@ -314,11 +314,11 @@ form p {
   margin-bottom: 35px;
 }
 .frm-control {
-  color: #ffffff;
+  color: #FFFFFF;
   font-family: 'Bitter', serif;
   font-size: 18px;
   background-color: transparent;
-  border: 2px solid #ffffff;
+  border: 2px solid #FFFFFF;
   height: 54px;
   width: 100%;
   padding: 0px 16px;
@@ -336,24 +336,24 @@ textarea.frm-control {
 }
 label {
   display: block;
-  color: #ffffff;
+  color: #FFFFFF;
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
 }
 .btn-submit {
-  color: #ffffff;
+  color: #FFFFFF;
   font-weight: 600;
   text-transform: uppercase;
-  border: 2px solid #4bcaff;
-  background-color: #4bcaff;
+  border: 2px solid #4BCAFF;
+  background-color: #4BCAFF;
   padding: 25px 0;
   width: 60%;
   transition: all 0.3s ease-in-out;
 }
 .btn-submit:hover {
   background-color: transparent;
-  color: #4bcaff;
+  color: #4BCAFF;
   transition: all 0.3s ease-in-out;
 }
 /* FOOTER Section */
@@ -376,7 +376,7 @@ label {
   border-left: 2px solid #606D75;
 }
 .footer_items a:hover {
-  color: #4bcaff;
+  color: #4BCAFF;
   transition: all 0.3s ease-in-out;
 }
 .footer_items p {
@@ -386,22 +386,45 @@ label {
   padding: 0;
   margin: 0;
 }
-@media screen and (max-width: 580px) {
-  .container {
-    max-width: 580px;
+/* Media Queries */
+@media screen and (max-width: 992px) {
+  .logo {
+    margin-top: 42px;
+    margin-bottom: 30px;
+  }
+  .main_menu {
+    margin-top: 36px;
+    margin-bottom: 36px;
+  }
+  h2 {
+    font-size: 36px;
+    line-height: 54px;
+  }
+  .theme {
+    padding-top: 300px;
+    padding-bottom: 160px;
+  }
+  form p:first-child {
+    padding-bottom: 16px;
+  }
+  .btn-submit {
+    width: 100%;
+  }
+  .footer_items {
+    padding: 60px 0px 60px 0px;
   }
 }
 @media screen and (max-width: 768px) {
   .logo {
     display: block;
+    margin: 20px auto 0px;
   }
-  .logo,
   .main_menu {
-    margin: 20px auto 20px;
+    margin: 20px 0px 20px 10px;
   }
   h2 {
     font-size: 30px;
-    line-height: 45px;
+    line-height: 46px;
   }
   .theme {
     padding-top: 210px;
@@ -417,10 +440,40 @@ label {
   .filter-button {
     margin: 40px 0px;
   }
+  .just p {
+    padding-bottom: 10px;
+  }
   .fa-twitter {
     padding-top: 42px;
   }
+  .second_photo {
+    padding-bottom: 100px;
+  }
   .second_photo p {
-    padding-bottom: 16px;
+    padding-bottom: 0px;
+  }
+  p.bitter {
+    padding-top: 20px;
+  }
+  form {
+    padding-bottom: 40px;
+  }
+  form p:first-child {
+    padding-bottom: 0px;
+  }
+  .btn-submit {
+    width: 100%;
+  }
+  .footer_items {
+    padding: 40px 0px 40px 0px;
+  }
+}
+@media screen and (max-width: 576px) {
+  h4 {
+    padding-top: 10px;
+    padding-bottom: 0px;
+  }
+  p {
+    padding-bottom: 10px;
   }
 }
