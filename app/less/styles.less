@@ -56,7 +56,7 @@ header {
     margin: 58px 0px 58px 18px;
     .menu;
     a {
-        color: #EDEEEE;
+        color: #EDEEEE;                
     }    
 }
 
@@ -116,7 +116,7 @@ p {
 
 /* PORTFOLIO Section */
 
-.filter-button {               
+.filter_button {               
     text-transform: uppercase;
     text-decoration: none;
     color: @portFolio;
@@ -125,7 +125,7 @@ p {
     border: 2px solid rgba(71, 81, 88, 0);
     padding: 10px 18px 10px;                    
     font-weight: bold;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;    
     &:hover {
             color: @blueEasy;            
             border-color: @blueEasy;
@@ -263,7 +263,7 @@ video {
     i {
         color: @whiteServices;
         font-size: 30px;
-        padding: 15px;
+        padding: 16px;
         margin: 10px 18px 0px 0px;
         border: 2px solid @whiteServices;
         transition: all 0.3s ease-in-out;
@@ -396,22 +396,58 @@ label {
 
 /* Media Queries */
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1199px) {
+    .main_menu a {
+        box-sizing: border-box;
+        width: 20%;
+        text-align: center;
+        padding: 10px 0px 10px;
+    }
+    h2 {
+        font-size: 38px;
+        line-height: 58px;
+    }
+    .filter_button {
+        box-sizing: border-box;
+        width: 20%;
+        text-align: center;
+        padding: 10px 0px 10px;
+        margin: 76px 0px 60px 0px;
+    }
+}
+
+@media screen and (max-width: 991px) {
     .logo {
         margin-top: 42px;
-        margin-bottom: 30px;
+        margin-bottom: 24px;
     }
     .main_menu {
-        margin-top: 36px;
+        margin-top: 30px;
         margin-bottom: 36px;
     }
     h2 {
-        font-size: 36px;
-        line-height: 54px;
+        font-size: 28px;
+        line-height: 46px;
     }
     .theme {
-        padding-top: 300px;
+        padding-top: 260px;
         padding-bottom: 160px;
+    }
+    h3.white_header, h3.black_header {        
+        padding-top: 40px;        
+    }
+    .filter_button {
+        margin: 38px 0px 40px 0px;
+    }
+    .col-sm-6.block_img, .col-md-3.block_img {
+        margin: 0px;
+        padding: 10px;    
+    }
+    .fa-twitter {
+        padding-top: 42px;
+    }
+    p.bitter {
+        padding-top: 20px;
     }
     form {        
         p:first-child {
@@ -426,38 +462,62 @@ label {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .logo {
         display: block;
-        margin: 20px auto 0px;        
+        margin: 16px auto 0px;        
     }     
     .main_menu {
-        margin: 20px 0px 20px 10px;        
+        margin: 10px 0px 16px 0px;        
     }   
     h2 {
-        font-size: 30px;
-        line-height: 46px;
+        font-size: 22px;
+        line-height: 36px;
     }
     .theme {
         padding-top: 210px;
         padding-bottom: 120px;
-    }
-    h3.white_header, h3.black_header {        
-        padding-top: 40px;        
+    }    
+    h4 {
+        font-size: 20px;
+        padding-top: 12px;
+        padding-bottom: 10px;
     }
     p {
-        padding-bottom: 34px;
+        padding-bottom: 20px;
+    }
+    h3.white_header, h3.black_header {
+        span{
+            font-size: 24px;
+        }        
+        font-size: 24px;        
     }    
-    .filter-button {
+    .filter-button {       
         margin: 40px 0px;
     }
+    .default_section {
+        .row {
+            padding-bottom: 40px;
+        }
+    }
     .just {
+        a {
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
         p {
             padding-bottom: 10px;
         }
     }
+    video {
+        margin-top: 40px;
+    }
     .fa-twitter {
         padding-top: 42px;
+    }
+    .myriad {
+        font-size: 20px;
     }
     .second_photo {
         p {
@@ -467,6 +527,10 @@ label {
     }
     p.bitter {
         padding-top: 20px;
+    }
+    blockquote {
+        font-size: 20px;
+        line-height: 40px;
     }
     form {
         padding-bottom: 40px;
@@ -483,12 +547,92 @@ label {
     
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 575px) {    
     h4 {
         padding-top: 10px;
         padding-bottom: 0px;
     }
     p {
         padding-bottom: 10px;
+    }    
+}
+
+@media screen and (max-width: 495px) {
+    .filter_button {
+        &:nth-child(1) {
+            width: 12%;
+        }
+        &:nth-child(2) {
+            width: 28%;
+        }
+        &:nth-child(3) {
+            width: 22%;
+        }
+        &:nth-child(4) {
+            width: 16%;
+        }
+        &:nth-child(5) {
+            width: 18%;
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .main_menu {
+        a {
+            font-size: 12px;
+        }
+    }      
+    .footer_items {
+        a {
+            padding: 0px 12px;
+        }
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .filter_button {
+        font-size: 10px;
+        margin: 16px 0px;        
+    }    
+}
+
+@media screen and (max-width: 395px) {
+    .second_photo {
+        i {
+            font-size: 22px;
+            padding: 12px;
+
+        }
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .main_menu {
+        a {
+            font-size: 10px;
+            padding: 6px 0px;
+        }
+    }    
+    .footer_items {
+        a, p {            
+            font-size: 10px;            
+        }
+    }    
+}
+
+@media screen and (max-width: 350px) {
+    .footer_items {
+        a {
+            padding: 0px 8px;
+        }
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .second_photo {
+        i {
+            margin: 10px 14px 0px 0px;
+        }
     }
 }

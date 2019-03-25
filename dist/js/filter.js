@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-    $(".filter-button").click(function(){
+    $(".filter_button").click(function(){
         var value = $(this).attr('data-filter');
         
         if(value == "all")
