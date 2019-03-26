@@ -223,7 +223,15 @@ p {
     }
 }
 video {
-   margin-top: 100px;    
+    margin-top: 100px;
+    &:focus {
+    outline: none;
+    box-shadow: none;
+    }
+    &:active {
+    outline: none;
+    box-shadow: none;
+    }     
 }
 
 /* TWITTER Section */
@@ -408,11 +416,25 @@ label {
         line-height: 58px;
     }
     .filter_button {
-        box-sizing: border-box;
-        width: 20%;
+        box-sizing: border-box;        
         text-align: center;
         padding: 10px 0px 10px;
-        margin: 76px 0px 60px 0px;
+        margin: 76px 0px 60px 0px;        
+        &:nth-child(1) {
+            width: 12%;
+        }
+        &:nth-child(2) {
+            width: 28%;
+        }
+        &:nth-child(3) {
+            width: 22%;
+        }
+        &:nth-child(4) {
+            width: 16%;
+        }
+        &:nth-child(5) {
+            width: 18%;
+        }        
     }
 }
 
@@ -547,7 +569,14 @@ label {
     
 }
 
-@media screen and (max-width: 575px) {    
+@media screen and (max-width: 575px) {
+    img.services {
+        display: block;
+        margin: 0 auto;
+    }
+    .services {
+        text-align: center;
+    }    
     h4 {
         padding-top: 10px;
         padding-bottom: 0px;
@@ -555,26 +584,6 @@ label {
     p {
         padding-bottom: 10px;
     }    
-}
-
-@media screen and (max-width: 495px) {
-    .filter_button {
-        &:nth-child(1) {
-            width: 12%;
-        }
-        &:nth-child(2) {
-            width: 28%;
-        }
-        &:nth-child(3) {
-            width: 22%;
-        }
-        &:nth-child(4) {
-            width: 16%;
-        }
-        &:nth-child(5) {
-            width: 18%;
-        }
-    }
 }
 
 @media screen and (max-width: 450px) {

@@ -253,6 +253,16 @@ p {
 video {
   margin-top: 100px;
 }
+video:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+video:active {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
 /* TWITTER Section */
 .fa-twitter {
   color: #FFFFFF;
@@ -441,10 +451,24 @@ label {
   .filter_button {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    width: 20%;
     text-align: center;
     padding: 10px 0px 10px;
     margin: 76px 0px 60px 0px;
+  }
+  .filter_button:nth-child(1) {
+    width: 12%;
+  }
+  .filter_button:nth-child(2) {
+    width: 28%;
+  }
+  .filter_button:nth-child(3) {
+    width: 22%;
+  }
+  .filter_button:nth-child(4) {
+    width: 16%;
+  }
+  .filter_button:nth-child(5) {
+    width: 18%;
   }
 }
 @media screen and (max-width: 991px) {
@@ -574,29 +598,19 @@ label {
   }
 }
 @media screen and (max-width: 575px) {
+  img.services {
+    display: block;
+    margin: 0 auto;
+  }
+  .services {
+    text-align: center;
+  }
   h4 {
     padding-top: 10px;
     padding-bottom: 0px;
   }
   p {
     padding-bottom: 10px;
-  }
-}
-@media screen and (max-width: 495px) {
-  .filter_button:nth-child(1) {
-    width: 12%;
-  }
-  .filter_button:nth-child(2) {
-    width: 28%;
-  }
-  .filter_button:nth-child(3) {
-    width: 22%;
-  }
-  .filter_button:nth-child(4) {
-    width: 16%;
-  }
-  .filter_button:nth-child(5) {
-    width: 18%;
   }
 }
 @media screen and (max-width: 450px) {
