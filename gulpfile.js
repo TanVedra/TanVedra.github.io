@@ -56,7 +56,7 @@ gulp.task('scripts', function() {
     return gulp.src([
         'app/libs/jquery/dist/jquery.min.js',
         'app/libs/magnific-popup/dist/jquery.magnific-popup.min.js'
-])
+    ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())
     .pipe(gulp.dest('app/js'));
@@ -71,6 +71,20 @@ gulp.task('img', function() {
         use: [quant()]
     })))
     .pipe(gulp.dest('dist/images'));
+});
+
+gulp.task('ico', function() {
+    return gulp.src([
+        'app/*.png',
+        'app/*.ico'
+    ])
+    .pipe(cache(min_img({
+        interlaced: true,
+        progressive: true,
+        svgoPlugins: [{removeViewBox: false}],
+        use: [quant()]
+    })))
+    .pipe(gulp.dest('dist'));
 });
 
 gulp.task('sprite', function() {
@@ -96,7 +110,7 @@ gulp.task('watch', ['browser', 'minification', 'scripts'], function() {
     gulp.watch('app/js/**/*.js', browser.reload);
 });
 
-gulp.task('build', ['clean', 'img', 'less', 'scripts'], function() {
+gulp.task('build', ['clean', 'img', 'ico', 'less', 'scripts'], function() {
     var buildCss = gulp.src([
         'app/css/styles.min.css',
         'app/css/libs.min.css',
@@ -114,7 +128,10 @@ gulp.task('build', ['clean', 'img', 'less', 'scripts'], function() {
     .pipe(gulp.dest('dist'))
     
     var buildVideo = gulp.src('app/video/**/*')
-    .pipe(gulp.dest('dist/video'));
+    .pipe(gulp.dest('dist/video'))
+
+    var buildIco = gulp.src('app/site.webmanifest')
+    .pipe(gulp.dest('dist'));
 });
 
 gulp.task('default', ['watch']);

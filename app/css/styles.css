@@ -185,14 +185,14 @@ p {
   margin-bottom: 32px;
 }
 /* Filter for div elements (start)*/
-.port-image {
+.port_image {
   width: 100%;
 }
-.each-item {
+.each_item {
   position: relative;
   overflow: hidden;
 }
-.each-item:hover .capture {
+.each_item:hover .capture {
   left: 0px;
   -webkit-transition: all 0.5s linear;
   -o-transition: all 0.5s linear;
@@ -349,10 +349,10 @@ form p {
   padding-bottom: 40px;
   margin: 0px;
 }
-.frm-group {
+.frm_group {
   margin-bottom: 35px;
 }
-.frm-control {
+.frm_control {
   color: #FFFFFF;
   font-family: 'Bitter', serif;
   font-size: 18px;
@@ -362,17 +362,17 @@ form p {
   width: 100%;
   padding: 0px 16px;
 }
-.frm-control:focus {
+.frm_control:focus {
   outline: none;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
-.frm-control:active {
+.frm_control:active {
   outline: none;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
-textarea.frm-control {
+textarea.frm_control {
   height: 216px;
 }
 label {
@@ -382,7 +382,7 @@ label {
   font-weight: 600;
   text-transform: uppercase;
 }
-.btn-submit {
+.btn_submit {
   color: #FFFFFF;
   font-weight: 600;
   text-transform: uppercase;
@@ -394,7 +394,7 @@ label {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-.btn-submit:hover {
+.btn_submit:hover {
   background-color: transparent;
   color: #4BCAFF;
   -webkit-transition: all 0.3s ease-in-out;
@@ -509,7 +509,7 @@ label {
   form p:first-child {
     padding-bottom: 16px;
   }
-  .btn-submit {
+  .btn_submit {
     width: 100%;
   }
   .footer_items {
@@ -547,9 +547,6 @@ label {
   h3.white_header span,
   h3.black_header span {
     font-size: 24px;
-  }
-  .filter-button {
-    margin: 40px 0px;
   }
   .default_section .row {
     padding-bottom: 40px;
@@ -590,7 +587,7 @@ label {
   form p:first-child {
     padding-bottom: 0px;
   }
-  .btn-submit {
+  .btn_submit {
     width: 100%;
   }
   .footer_items {
