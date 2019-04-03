@@ -200,21 +200,27 @@ p {
     }
 }
 .just {
-    a {
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #353F46;
-    font-size: 14px;
-    border: 2px solid #353F46;
-    padding: 14px 50px;                           
-    font-weight: bold;
-    transition: all 0.3s ease-in-out;
-        &:hover {
-        color: @blueEasy;
-        border-color: @blueEasy;
+    button {
+        background-color: transparent;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #353F46;
+        font-size: 14px;
+        border: 2px solid #353F46;
+        padding: 14px 50px;                           
+        font-weight: bold;
         transition: all 0.3s ease-in-out;
+            &:hover {
+            color: @blueEasy;
+            border-color: @blueEasy;
+            transition: all 0.3s ease-in-out;
+            }
+            &:focus,
+            &:active {
+                outline: none;
+                box-shadow: none;
+            }             
         }
-    }
     p {
     font-weight: 400;
     font-size: 14px;
@@ -233,6 +239,62 @@ video {
     box-shadow: none;
     }     
 }
+
+/* Popup styles (start) */
+.popup_wrapper {
+    background-color: rgba(70, 80, 88, 0.8);
+    display: none;
+    height: 100%;
+    left: 0;
+    padding-top: 200px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 201;  
+}
+.popup {
+    background-color: @blueEasy;
+    border-radius: 20px;
+    box-sizing: border-box;
+    color: @whiteServices;
+    font-family: "Myriad Pro", "Times New Roman", sans-serif;    
+    margin: 0 auto;
+    max-width: 400px;
+    padding: 30px;
+    position: relative;
+    z-index: 203;
+    p {
+        font-size: 22px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+}  
+.popup::after {
+    background-color: @blueEasy;
+    border-bottom-right-radius: 5px;
+    content: '';
+    height: 50px;
+    left: 80%;
+    margin: -25px;
+    position: absolute;
+    top: 100%;
+    transform: rotate(45deg);
+    width: 50px;
+    z-index: 202;
+}
+.break {
+    color: @whiteServices;
+    cursor: pointer;    
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    right: 16px;
+    top: 10px;
+    &:hover {
+        color: @portFolio;
+    }   
+}
+/* Popup styles (end) */
 
 /* TWITTER Section */
 
@@ -520,7 +582,7 @@ label {
         }
     }
     .just {
-        a {
+        button {
             display: block;
             width: 100%;
             text-align: center;

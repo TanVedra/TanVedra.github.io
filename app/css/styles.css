@@ -225,7 +225,8 @@ p {
 .default_section .row {
   padding-bottom: 78px;
 }
-.just a {
+.just button {
+  background-color: transparent;
   text-transform: uppercase;
   text-decoration: none;
   color: #353F46;
@@ -237,12 +238,18 @@ p {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-.just a:hover {
+.just button:hover {
   color: #4BCAFF;
   border-color: #4BCAFF;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+}
+.just button:focus,
+.just button:active {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 .just p {
   font-weight: 400;
@@ -263,6 +270,66 @@ video:active {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
+/* Popup styles (start) */
+.popup_wrapper {
+  background-color: rgba(70, 80, 88, 0.8);
+  display: none;
+  height: 100%;
+  left: 0;
+  padding-top: 200px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 201;
+}
+.popup {
+  background-color: #4BCAFF;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #FFFFFF;
+  font-family: "Myriad Pro", "Times New Roman", sans-serif;
+  margin: 0 auto;
+  max-width: 400px;
+  padding: 30px;
+  position: relative;
+  z-index: 203;
+}
+.popup p {
+  font-size: 22px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.popup::after {
+  background-color: #4BCAFF;
+  -webkit-border-bottom-right-radius: 5px;
+          border-bottom-right-radius: 5px;
+  content: '';
+  height: 50px;
+  left: 80%;
+  margin: -25px;
+  position: absolute;
+  top: 100%;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  width: 50px;
+  z-index: 202;
+}
+.break {
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  right: 16px;
+  top: 10px;
+}
+.break:hover {
+  color: #515F67;
+}
+/* Popup styles (end) */
 /* TWITTER Section */
 .fa-twitter {
   color: #FFFFFF;
@@ -551,7 +618,7 @@ label {
   .default_section .row {
     padding-bottom: 40px;
   }
-  .just a {
+  .just button {
     display: block;
     width: 100%;
     text-align: center;
