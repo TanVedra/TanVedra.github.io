@@ -1,38 +1,25 @@
 /* Mixins & variables (start)*/
 
-@portFolio: #515F67;
 @blueEasy: #4BCAFF;
+@portFolio: #515F67;
 @whiteServices: #FFFFFF;
+
 .menu {
     a {
-        text-decoration: none;        
-        text-transform: uppercase;
-        font-size: 14px;
         border: 2px solid rgba(71, 81, 88, 0);
-        padding: 10px 18px 10px;                    
+        font-size: 14px;
         font-weight: bold;
-        transition: all 0.3s ease-in-out;
-                
-            &:hover {
+        padding: 10px 18px 10px;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: all 0.3s ease-in-out;                
+        &:hover {
+            border-color: @blueEasy;
             color: @blueEasy;
             text-decoration: none;
-            border-color: @blueEasy;
             transition: all 0.3s ease-in-out;
-            } 
-        }   
-}
-.header_3_style {
-    font-size: 30px;
-    font-weight: 300;
-    text-transform: uppercase;
-    padding-top: 80px;
-    margin-top: 0;
-    span {
-        font-size: 30px;
-        font-weight: 300;
-        text-transform: uppercase;
-        border-bottom: 1px solid; 
-    }
+        } 
+    }   
 }
 
 /* Mixins & variables (end)*/
@@ -49,9 +36,11 @@ header {
     width: 100%;
     z-index: 100;    
 }
+
 .logo {    
     margin: 65px 0px 50px 0px;
 }
+
 .main_menu {    
     margin: 58px 0px 58px 18px;
     .menu;
@@ -64,24 +53,26 @@ header {
 
 .first_photo {
     background-image: url(../images/bg_grounds/01_bg_photo.jpg);
-    background-size: cover;    
+    background-size: cover;        
 }
+
 h2 {
+    color: @whiteServices;
     font-size: 42px;
     font-weight: 300;
-    text-transform: uppercase;
-    text-align: center;
-    color: @whiteServices;
-    margin: 0;
     line-height: 60px;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
     span {
         background-color: rgba(70, 80, 88, 0.5);
         padding: 0px 20px;    
     }
 }
+
 .theme {
-    padding-top: 400px;
     padding-bottom: 260px;
+    padding-top: 400px;
 }
 
 /* SERVICES Section */
@@ -89,68 +80,79 @@ h2 {
 .blue_bg {
     background-color: @blueEasy;
 }
-.white_header {    
-    .header_3_style; 
+
+.white_header {     
     color: @whiteServices;        
-    margin-bottom: 30px;
-    
-    span {        
-        color: @whiteServices;
-        border-color: @whiteServices;           
+    margin-bottom: 30px;    
+    span {
+        border-color: @whiteServices;        
+        color: @whiteServices;                   
     }
 }
+
+h3 {
+    font-size: 30px;
+    font-weight: 300;
+    margin-top: 0;
+    padding-top: 80px;
+    text-transform: uppercase;
+    span {
+        border-bottom: 1px solid;
+        font-size: 30px;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+}
+
 h4 {
     color: @whiteServices;
-    font-weight: 600;
     font-size: 24px;
-    text-transform: uppercase;
+    font-weight: 600;
+    padding-bottom: 20px;
     padding-top: 24px;
-    padding-bottom: 20px;    
+    text-transform: uppercase;
 }
+
 p {  
     color: @whiteServices;
+    font-size: 12px;
     font-weight: 600;
-    font-size: 12px;     
     padding-bottom: 70px;
 }
 
 /* PORTFOLIO Section */
 
 .filter_button {               
-    text-transform: uppercase;
-    text-decoration: none;
-    color: @portFolio;
     background-color: @whiteServices;
-    font-size: 14px;
     border: 2px solid rgba(71, 81, 88, 0);
-    padding: 10px 18px 10px;                    
+    color: @portFolio;
+    font-size: 14px;
     font-weight: bold;
+    padding: 10px 18px 10px;
+    text-decoration: none;
+    text-transform: uppercase;
     transition: all 0.3s ease-in-out;    
     &:hover {
-            color: @blueEasy;            
-            border-color: @blueEasy;
-            text-decoration: none;
-            transition: all 0.3s ease-in-out;
+        border-color: @blueEasy;
+        color: @blueEasy;
+        text-decoration: none;
+        transition: all 0.3s ease-in-out;
     }
-    &:focus {
-        outline: none;
+    &:focus, &:active {
         box-shadow: none;
-    }
-    &:active {
         outline: none;
-        box-shadow: none;
-    }     
+    }         
     margin: 86px 0px 80px 6px;    
 }
-.black_header {
-    .header_3_style;    
+
+.black_header {        
     color: @portFolio;
     span {
-        color: @portFolio;
         border-color: @portFolio;
-    }
-    
+        color: @portFolio;        
+    }    
 }
+
 .block_img {
     margin-bottom: 32px;    
 }
@@ -160,9 +162,10 @@ p {
 .port_image {
     width: 100%;
 }
+
 .each_item {
-    position:relative;
     overflow:hidden;
+    position:relative;
 }
 
 .each_item:hover .capture {
@@ -171,17 +174,17 @@ p {
 }
 
 .capture {
-    position:absolute;
-    width:100%;
+    background:rgba(71, 81, 88, 0.5);
     height:100%;
+    left:-100%;
+    position:absolute;
     top: 0px;
-    background:rgba(71, 81, 88, 0.5);       
-    left:-100%;       
     transition: all 0.3s linear 0.1s;
+    width:100%;
     img {
-        display: block;        
-        width: 15%;
-        margin: 42% auto;        
+        display: block;
+        margin: 42% auto;
+        width: 15%;       
     }   
 }
 
@@ -199,45 +202,45 @@ p {
         padding-bottom: 78px;
     }
 }
+
 .just {
     button {
         background-color: transparent;
-        text-transform: uppercase;
-        text-decoration: none;
+        border: 2px solid #353F46;
         color: #353F46;
         font-size: 14px;
-        border: 2px solid #353F46;
-        padding: 14px 50px;                           
         font-weight: bold;
+        padding: 14px 50px;
+        text-decoration: none;
+        text-transform: uppercase;
         transition: all 0.3s ease-in-out;
-            &:hover {
-            color: @blueEasy;
+        &:hover {
             border-color: @blueEasy;
+            color: @blueEasy;
             transition: all 0.3s ease-in-out;
-            }
-            &:focus,
-            &:active {
-                outline: none;
-                box-shadow: none;
-            }             
         }
+        &:focus,
+        &:active {
+            box-shadow: none;
+            outline: none;                
+        }             
+    }    
     p {
-    font-weight: 400;
-    font-size: 14px;
-    padding-bottom: 30px;
-    line-height: 22px;            
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+        padding-bottom: 30px;            
     }
 }
+
 video {
     margin-top: 100px;
-    &:focus {
-    outline: none;
-    box-shadow: none;
-    }
+    &:focus,
     &:active {
-    outline: none;
-    box-shadow: none;
-    }     
+        box-shadow: none;
+        outline: none;
+    
+    }         
 }
 
 /* Popup styles (start) */
@@ -250,8 +253,9 @@ video {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 201;  
+    z-index: 101;  
 }
+
 .popup {
     background-color: @blueEasy;
     border-radius: 20px;
@@ -262,26 +266,45 @@ video {
     max-width: 400px;
     padding: 30px;
     position: relative;
-    z-index: 203;
-    p {
-        font-size: 22px;
+    z-index: 103;     
+    &::after {
+        background-color: @blueEasy;
+        border-bottom-right-radius: 5px;
+        content: '';
+        height: 50px;
+        left: 25%;
+        margin: -25px;
+        position: absolute;
+        top: 100%;
+        transform: rotate(45deg);
+        width: 50px;
+        z-index: 102;
+    }
+    h5 {
+        font-size: 24px;
         text-align: center;
         text-transform: uppercase;
     }
-}  
-.popup::after {
-    background-color: @blueEasy;
-    border-bottom-right-radius: 5px;
-    content: '';
-    height: 50px;
-    left: 80%;
-    margin: -25px;
-    position: absolute;
-    top: 100%;
-    transform: rotate(45deg);
-    width: 50px;
-    z-index: 202;
+    p {
+        font-size: 20px;
+        padding: 0px;
+        text-transform: uppercase;        
+        span {
+            color: @portFolio;
+            text-transform: lowercase;
+        }
+    }        
+    i {
+        background-color: @blueEasy;
+        color: @portFolio;
+        font-size: 60px;
+        margin-left: 10px;
+        &:hover {
+            color: @whiteServices;
+        }
+    }
 }
+
 .break {
     color: @whiteServices;
     cursor: pointer;    
@@ -308,9 +331,9 @@ video {
     font-size: 28px;
     font-weight: 400;
     a {
+        color: @whiteServices;
         font-family: "Segoe UI", "Open Sans", sans-serif;
         font-weight: 600;
-        color: @whiteServices;
         text-decoration: none;
     }
 }
@@ -325,21 +348,21 @@ video {
         padding-top: 100px;
     }
     p {
-        font-weight: 400;
         font-size: 14px;
-        padding-bottom: 40px;                
-        line-height: 22px;            
+        font-weight: 400;
+        line-height: 22px;
+        padding-bottom: 40px;            
         }
     i {
+        border: 2px solid @whiteServices;
         color: @whiteServices;
         font-size: 30px;
-        padding: 16px;
         margin: 10px 18px 0px 0px;
-        border: 2px solid @whiteServices;
+        padding: 16px;
         transition: all 0.3s ease-in-out;
         &:hover {
-            color: @blueEasy;
             border-color: @blueEasy;
+            color: @blueEasy;
             transition: all 0.3s ease-in-out;
         }
     }
@@ -351,10 +374,11 @@ p.bitter {
     color: @portFolio;
     font-family: 'Bitter', serif;
     font-size: 72px;
-    padding-top: 60px;
-    padding-bottom: 0px;
     margin-bottom: 0px;
+    padding-bottom: 0px;
+    padding-top: 60px;
 }
+
 blockquote {
     color: @portFolio;
     font-size: 28px;
@@ -373,57 +397,59 @@ blockquote {
     background-image: url(../images/bg_grounds/03_bg_photo.jpg);
     background-size: cover;
 }
+
 form {
     padding-bottom: 80px;
     p {
         font-size: 14px;
         font-weight: 500;
-        padding-top: 20px;
-        padding-bottom: 40px;
         margin: 0px;
+        padding-bottom: 40px;
+        padding-top: 20px;
     }    
 }
 
 .frm_group {
     margin-bottom: 35px;
 }
+
 .frm_control {
+    background-color: transparent;
+    border: 2px solid @whiteServices;
     color: @whiteServices;
     font-family: 'Bitter', serif;
     font-size: 18px;
-    background-color: transparent;
-    border: 2px solid @whiteServices;
     height: 54px;
-    width: 100%;
     padding: 0px 16px;
-    &:focus {
-        outline: none;
-        box-shadow: none;
-    }
+    width: 100%;
+    &:focus,
     &:active {
-        outline: none;
         box-shadow: none;
-    }    
+        outline: none;        
+    }         
 }
+
 textarea.frm_control {
     height: 216px;
 }
+
 label {
-    display: block;
     color: @whiteServices;
+    display: block;
     font-size: 14px;
     font-weight: 600;
-    text-transform: uppercase;    
+    text-transform: uppercase;
 }
+
 .btn_submit {
+    background-color: @blueEasy;
+    border: 2px solid @blueEasy;
     color: @whiteServices;
     font-weight: 600;
-    text-transform: uppercase;
-    border: 2px solid @blueEasy;
-    background-color: @blueEasy;    
     padding: 25px 0;
-    width: 60%;    
+    text-transform: uppercase;
     transition: all 0.3s ease-in-out;
+    width: 60%;
     &:hover {
         background-color: transparent;
         color: @blueEasy;
@@ -436,15 +462,16 @@ label {
 .footer_bg {
     background-color: #353F47;
 }
+
 .footer_items {
     padding: 80px 0px 80px 0px;
     a {
         color: #606D75;
         font-size: 12px;
         font-weight: 500;
+        padding: 0px 14px;
         text-decoration: none;
         text-transform: uppercase;
-        padding: 0px 14px;
         transition: all 0.3s ease-in-out;
         &:nth-child(1n+2) {
             border-left: 2px solid #606D75;
@@ -453,14 +480,34 @@ label {
             color: @blueEasy;
             transition: all 0.3s ease-in-out;
         }
-
     }
     p {
         color: #606D75;
         font-size: 12px;
         font-weight: 500;
-        padding: 0;
         margin: 0;
+        padding: 0;
+        text-align: right;
+    }
+}
+
+/* UP Button */
+
+button#toTop {       
+    background-color: @portFolio;
+    border-radius: 50%;
+    border: 2px solid @blueEasy;
+    bottom: 18px;
+    color: @whiteServices;
+    display: none;
+    padding: 12px;
+    position: fixed;
+    right: 18px;
+    z-index: 99;
+    &:focus,
+    &:active {
+        box-shadow: none;
+        outline: none;        
     }
 }
 
@@ -469,19 +516,25 @@ label {
 @media screen and (max-width: 1199px) {
     .main_menu a {
         box-sizing: border-box;
-        width: 20%;
-        text-align: center;
         padding: 10px 0px 10px;
+        text-align: center;
+        width: 20%;
+        &:first-child {
+            width: 16%;
+        }
+        &:nth-child(4) {
+            width: 22%;
+        }
     }
     h2 {
         font-size: 38px;
         line-height: 58px;
     }
     .filter_button {
-        box-sizing: border-box;        
-        text-align: center;
+        box-sizing: border-box;
+        margin: 76px 0px 60px 0px;
         padding: 10px 0px 10px;
-        margin: 76px 0px 60px 0px;        
+        text-align: center;        
         &:nth-child(1) {
             width: 12%;
         }
@@ -502,22 +555,23 @@ label {
 
 @media screen and (max-width: 991px) {
     .logo {
-        margin-top: 42px;
         margin-bottom: 24px;
+        margin-top: 42px;
     }
     .main_menu {
-        margin-top: 30px;
         margin-bottom: 36px;
+        margin-top: 30px;        
     }
     h2 {
         font-size: 28px;
         line-height: 46px;
     }
     .theme {
-        padding-top: 260px;
         padding-bottom: 160px;
+        padding-top: 260px;        
     }
-    h3.white_header, h3.black_header {        
+    .white_header,
+    .black_header {        
         padding-top: 40px;        
     }
     .filter_button {
@@ -559,18 +613,19 @@ label {
         line-height: 36px;
     }
     .theme {
-        padding-top: 210px;
         padding-bottom: 120px;
+        padding-top: 210px;        
     }    
     h4 {
         font-size: 20px;
-        padding-top: 12px;
         padding-bottom: 10px;
+        padding-top: 12px;
     }
     p {
         padding-bottom: 20px;
     }
-    h3.white_header, h3.black_header {
+    .white_header,
+    .black_header {
         span{
             font-size: 24px;
         }        
@@ -584,8 +639,8 @@ label {
     .just {
         button {
             display: block;
-            width: 100%;
             text-align: center;
+            width: 100%;
         }
         p {
             padding-bottom: 10px;
@@ -637,8 +692,8 @@ label {
         text-align: center;
     }    
     h4 {
-        padding-top: 10px;
         padding-bottom: 0px;
+        padding-top: 10px;        
     }
     p {
         padding-bottom: 10px;
@@ -662,7 +717,28 @@ label {
     .filter_button {
         font-size: 10px;
         margin: 16px 0px;        
-    }    
+    }
+    .popup {
+        max-width: 300px;
+        padding: 18px;
+        &::after {
+            height: 40px;
+            margin: -20px;
+            width: 40px;
+        }
+        h5 {
+            font-size: 18px;
+        }
+        p {
+            font-size: 14px;
+        }
+        i {
+            font-size: 40px;
+        }
+    }
+    .break {
+        right: 12px;        
+    }   
 }
 
 @media screen and (max-width: 395px) {
@@ -683,7 +759,8 @@ label {
         }
     }    
     .footer_items {
-        a, p {            
+        a,
+        p {            
             font-size: 10px;            
         }
     }    

@@ -1,35 +1,22 @@
 /* Mixins & variables (start)*/
 .menu a {
+  border: 2px solid rgba(71, 81, 88, 0);
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px 18px 10px;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 14px;
-  border: 2px solid rgba(71, 81, 88, 0);
-  padding: 10px 18px 10px;
-  font-weight: bold;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 .menu a:hover {
+  border-color: #4BCAFF;
   color: #4BCAFF;
   text-decoration: none;
-  border-color: #4BCAFF;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-}
-.header_3_style {
-  font-size: 30px;
-  font-weight: 300;
-  text-transform: uppercase;
-  padding-top: 80px;
-  margin-top: 0;
-}
-.header_3_style span {
-  font-size: 30px;
-  font-weight: 300;
-  text-transform: uppercase;
-  border-bottom: 1px solid;
 }
 /* Mixins & variables (end)*/
 body {
@@ -49,20 +36,20 @@ header {
   margin: 58px 0px 58px 18px;
 }
 .main_menu a {
+  border: 2px solid rgba(71, 81, 88, 0);
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px 18px 10px;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 14px;
-  border: 2px solid rgba(71, 81, 88, 0);
-  padding: 10px 18px 10px;
-  font-weight: bold;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 .main_menu a:hover {
+  border-color: #4BCAFF;
   color: #4BCAFF;
   text-decoration: none;
-  border-color: #4BCAFF;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -77,109 +64,96 @@ header {
           background-size: cover;
 }
 h2 {
+  color: #FFFFFF;
   font-size: 42px;
   font-weight: 300;
-  text-transform: uppercase;
-  text-align: center;
-  color: #FFFFFF;
-  margin: 0;
   line-height: 60px;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
 }
 h2 span {
   background-color: rgba(70, 80, 88, 0.5);
   padding: 0px 20px;
 }
 .theme {
-  padding-top: 400px;
   padding-bottom: 260px;
+  padding-top: 400px;
 }
 /* SERVICES Section */
 .blue_bg {
   background-color: #4BCAFF;
 }
 .white_header {
-  font-size: 30px;
-  font-weight: 300;
-  text-transform: uppercase;
-  padding-top: 80px;
-  margin-top: 0;
   color: #FFFFFF;
   margin-bottom: 30px;
 }
 .white_header span {
+  border-color: #FFFFFF;
+  color: #FFFFFF;
+}
+h3 {
+  font-size: 30px;
+  font-weight: 300;
+  margin-top: 0;
+  padding-top: 80px;
+  text-transform: uppercase;
+}
+h3 span {
+  border-bottom: 1px solid;
   font-size: 30px;
   font-weight: 300;
   text-transform: uppercase;
-  border-bottom: 1px solid;
-}
-.white_header span {
-  color: #FFFFFF;
-  border-color: #FFFFFF;
 }
 h4 {
   color: #FFFFFF;
-  font-weight: 600;
   font-size: 24px;
-  text-transform: uppercase;
-  padding-top: 24px;
+  font-weight: 600;
   padding-bottom: 20px;
+  padding-top: 24px;
+  text-transform: uppercase;
 }
 p {
   color: #FFFFFF;
-  font-weight: 600;
   font-size: 12px;
+  font-weight: 600;
   padding-bottom: 70px;
 }
 /* PORTFOLIO Section */
 .filter_button {
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #515F67;
   background-color: #FFFFFF;
-  font-size: 14px;
   border: 2px solid rgba(71, 81, 88, 0);
-  padding: 10px 18px 10px;
+  color: #515F67;
+  font-size: 14px;
   font-weight: bold;
+  padding: 10px 18px 10px;
+  text-decoration: none;
+  text-transform: uppercase;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   margin: 86px 0px 80px 6px;
 }
 .filter_button:hover {
-  color: #4BCAFF;
   border-color: #4BCAFF;
+  color: #4BCAFF;
   text-decoration: none;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-.filter_button:focus {
-  outline: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
+.filter_button:focus,
 .filter_button:active {
-  outline: none;
   -webkit-box-shadow: none;
           box-shadow: none;
+  outline: none;
 }
 .black_header {
-  font-size: 30px;
-  font-weight: 300;
-  text-transform: uppercase;
-  padding-top: 80px;
-  margin-top: 0;
   color: #515F67;
 }
 .black_header span {
-  font-size: 30px;
-  font-weight: 300;
-  text-transform: uppercase;
-  border-bottom: 1px solid;
-}
-.black_header span {
-  color: #515F67;
   border-color: #515F67;
+  color: #515F67;
 }
 .block_img {
   margin-bottom: 32px;
@@ -189,8 +163,8 @@ p {
   width: 100%;
 }
 .each_item {
-  position: relative;
   overflow: hidden;
+  position: relative;
 }
 .each_item:hover .capture {
   left: 0px;
@@ -199,20 +173,20 @@ p {
   transition: all 0.5s linear;
 }
 .capture {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0px;
   background: rgba(71, 81, 88, 0.5);
+  height: 100%;
   left: -100%;
+  position: absolute;
+  top: 0px;
   -webkit-transition: all 0.3s linear 0.1s;
   -o-transition: all 0.3s linear 0.1s;
   transition: all 0.3s linear 0.1s;
+  width: 100%;
 }
 .capture img {
   display: block;
-  width: 15%;
   margin: 42% auto;
+  width: 15%;
 }
 /* Filter for div elements (end)*/
 .container_bottom {
@@ -227,48 +201,44 @@ p {
 }
 .just button {
   background-color: transparent;
-  text-transform: uppercase;
-  text-decoration: none;
+  border: 2px solid #353F46;
   color: #353F46;
   font-size: 14px;
-  border: 2px solid #353F46;
-  padding: 14px 50px;
   font-weight: bold;
+  padding: 14px 50px;
+  text-decoration: none;
+  text-transform: uppercase;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 .just button:hover {
-  color: #4BCAFF;
   border-color: #4BCAFF;
+  color: #4BCAFF;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 .just button:focus,
 .just button:active {
-  outline: none;
   -webkit-box-shadow: none;
           box-shadow: none;
+  outline: none;
 }
 .just p {
-  font-weight: 400;
   font-size: 14px;
-  padding-bottom: 30px;
+  font-weight: 400;
   line-height: 22px;
+  padding-bottom: 30px;
 }
 video {
   margin-top: 100px;
 }
-video:focus {
-  outline: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
+video:focus,
 video:active {
-  outline: none;
   -webkit-box-shadow: none;
           box-shadow: none;
+  outline: none;
 }
 /* Popup styles (start) */
 .popup_wrapper {
@@ -280,7 +250,7 @@ video:active {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 201;
+  z-index: 101;
 }
 .popup {
   background-color: #4BCAFF;
@@ -294,12 +264,7 @@ video:active {
   max-width: 400px;
   padding: 30px;
   position: relative;
-  z-index: 203;
-}
-.popup p {
-  font-size: 22px;
-  text-align: center;
-  text-transform: uppercase;
+  z-index: 103;
 }
 .popup::after {
   background-color: #4BCAFF;
@@ -307,7 +272,7 @@ video:active {
           border-bottom-right-radius: 5px;
   content: '';
   height: 50px;
-  left: 80%;
+  left: 25%;
   margin: -25px;
   position: absolute;
   top: 100%;
@@ -315,7 +280,30 @@ video:active {
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
   width: 50px;
-  z-index: 202;
+  z-index: 102;
+}
+.popup h5 {
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.popup p {
+  font-size: 20px;
+  padding: 0px;
+  text-transform: uppercase;
+}
+.popup p span {
+  color: #515F67;
+  text-transform: lowercase;
+}
+.popup i {
+  background-color: #4BCAFF;
+  color: #515F67;
+  font-size: 60px;
+  margin-left: 10px;
+}
+.popup i:hover {
+  color: #FFFFFF;
 }
 .break {
   color: #FFFFFF;
@@ -342,9 +330,9 @@ video:active {
   font-weight: 400;
 }
 .myriad a {
+  color: #FFFFFF;
   font-family: "Segoe UI", "Open Sans", sans-serif;
   font-weight: 600;
-  color: #FFFFFF;
   text-decoration: none;
 }
 /* WHO IS JOHN DOE? Section */
@@ -358,24 +346,24 @@ video:active {
   padding-top: 100px;
 }
 .second_photo p {
-  font-weight: 400;
   font-size: 14px;
-  padding-bottom: 40px;
+  font-weight: 400;
   line-height: 22px;
+  padding-bottom: 40px;
 }
 .second_photo i {
+  border: 2px solid #FFFFFF;
   color: #FFFFFF;
   font-size: 30px;
-  padding: 16px;
   margin: 10px 18px 0px 0px;
-  border: 2px solid #FFFFFF;
+  padding: 16px;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 .second_photo i:hover {
-  color: #4BCAFF;
   border-color: #4BCAFF;
+  color: #4BCAFF;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -385,9 +373,9 @@ p.bitter {
   color: #515F67;
   font-family: 'Bitter', serif;
   font-size: 72px;
-  padding-top: 60px;
-  padding-bottom: 0px;
   margin-bottom: 0px;
+  padding-bottom: 0px;
+  padding-top: 60px;
 }
 blockquote {
   color: #515F67;
@@ -412,54 +400,50 @@ form {
 form p {
   font-size: 14px;
   font-weight: 500;
-  padding-top: 20px;
-  padding-bottom: 40px;
   margin: 0px;
+  padding-bottom: 40px;
+  padding-top: 20px;
 }
 .frm_group {
   margin-bottom: 35px;
 }
 .frm_control {
+  background-color: transparent;
+  border: 2px solid #FFFFFF;
   color: #FFFFFF;
   font-family: 'Bitter', serif;
   font-size: 18px;
-  background-color: transparent;
-  border: 2px solid #FFFFFF;
   height: 54px;
-  width: 100%;
   padding: 0px 16px;
+  width: 100%;
 }
-.frm_control:focus {
-  outline: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
+.frm_control:focus,
 .frm_control:active {
-  outline: none;
   -webkit-box-shadow: none;
           box-shadow: none;
+  outline: none;
 }
 textarea.frm_control {
   height: 216px;
 }
 label {
-  display: block;
   color: #FFFFFF;
+  display: block;
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
 }
 .btn_submit {
+  background-color: #4BCAFF;
+  border: 2px solid #4BCAFF;
   color: #FFFFFF;
   font-weight: 600;
-  text-transform: uppercase;
-  border: 2px solid #4BCAFF;
-  background-color: #4BCAFF;
   padding: 25px 0;
-  width: 60%;
+  text-transform: uppercase;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  width: 60%;
 }
 .btn_submit:hover {
   background-color: transparent;
@@ -479,9 +463,9 @@ label {
   color: #606D75;
   font-size: 12px;
   font-weight: 500;
+  padding: 0px 14px;
   text-decoration: none;
   text-transform: uppercase;
-  padding: 0px 14px;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -499,17 +483,44 @@ label {
   color: #606D75;
   font-size: 12px;
   font-weight: 500;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  text-align: right;
+}
+/* UP Button */
+button#toTop {
+  background-color: #515F67;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  border: 2px solid #4BCAFF;
+  bottom: 18px;
+  color: #FFFFFF;
+  display: none;
+  padding: 12px;
+  position: fixed;
+  right: 18px;
+  z-index: 99;
+}
+button#toTop:focus,
+button#toTop:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
 }
 /* Media Queries */
 @media screen and (max-width: 1199px) {
   .main_menu a {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    width: 20%;
-    text-align: center;
     padding: 10px 0px 10px;
+    text-align: center;
+    width: 20%;
+  }
+  .main_menu a:first-child {
+    width: 16%;
+  }
+  .main_menu a:nth-child(4) {
+    width: 22%;
   }
   h2 {
     font-size: 38px;
@@ -518,9 +529,9 @@ label {
   .filter_button {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    text-align: center;
-    padding: 10px 0px 10px;
     margin: 76px 0px 60px 0px;
+    padding: 10px 0px 10px;
+    text-align: center;
   }
   .filter_button:nth-child(1) {
     width: 12%;
@@ -540,23 +551,23 @@ label {
 }
 @media screen and (max-width: 991px) {
   .logo {
-    margin-top: 42px;
     margin-bottom: 24px;
+    margin-top: 42px;
   }
   .main_menu {
-    margin-top: 30px;
     margin-bottom: 36px;
+    margin-top: 30px;
   }
   h2 {
     font-size: 28px;
     line-height: 46px;
   }
   .theme {
-    padding-top: 260px;
     padding-bottom: 160px;
+    padding-top: 260px;
   }
-  h3.white_header,
-  h3.black_header {
+  .white_header,
+  .black_header {
     padding-top: 40px;
   }
   .filter_button {
@@ -596,23 +607,23 @@ label {
     line-height: 36px;
   }
   .theme {
-    padding-top: 210px;
     padding-bottom: 120px;
+    padding-top: 210px;
   }
   h4 {
     font-size: 20px;
-    padding-top: 12px;
     padding-bottom: 10px;
+    padding-top: 12px;
   }
   p {
     padding-bottom: 20px;
   }
-  h3.white_header,
-  h3.black_header {
+  .white_header,
+  .black_header {
     font-size: 24px;
   }
-  h3.white_header span,
-  h3.black_header span {
+  .white_header span,
+  .black_header span {
     font-size: 24px;
   }
   .default_section .row {
@@ -620,8 +631,8 @@ label {
   }
   .just button {
     display: block;
-    width: 100%;
     text-align: center;
+    width: 100%;
   }
   .just p {
     padding-bottom: 10px;
@@ -670,8 +681,8 @@ label {
     text-align: center;
   }
   h4 {
-    padding-top: 10px;
     padding-bottom: 0px;
+    padding-top: 10px;
   }
   p {
     padding-bottom: 10px;
@@ -689,6 +700,27 @@ label {
   .filter_button {
     font-size: 10px;
     margin: 16px 0px;
+  }
+  .popup {
+    max-width: 300px;
+    padding: 18px;
+  }
+  .popup::after {
+    height: 40px;
+    margin: -20px;
+    width: 40px;
+  }
+  .popup h5 {
+    font-size: 18px;
+  }
+  .popup p {
+    font-size: 14px;
+  }
+  .popup i {
+    font-size: 40px;
+  }
+  .break {
+    right: 12px;
   }
 }
 @media screen and (max-width: 395px) {
