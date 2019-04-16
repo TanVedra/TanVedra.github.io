@@ -287,6 +287,17 @@ video:active {
   text-align: center;
   text-transform: uppercase;
 }
+.popup h5::before,
+.popup h5::after {
+  border: solid #FFFFFF;
+  border-width: 0px 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  content: '';
+  display: inline-block;
+  height: 2px;
+  vertical-align: super;
+}
 .popup p {
   font-size: 20px;
   padding: 0px;
@@ -312,7 +323,7 @@ video:active {
   font-weight: bold;
   position: absolute;
   right: 16px;
-  top: 10px;
+  top: 0px;
 }
 .break:hover {
   color: #515F67;
@@ -489,17 +500,48 @@ label {
 }
 /* UP Button */
 button#toTop {
-  background-color: #515F67;
+  background-color: rgba(70, 80, 88, 0.4);
   -webkit-border-radius: 50%;
           border-radius: 50%;
   border: 2px solid #4BCAFF;
   bottom: 18px;
-  color: #FFFFFF;
   display: none;
-  padding: 12px;
+  width: 50px;
+  height: 50px;
   position: fixed;
   right: 18px;
   z-index: 99;
+}
+button#toTop span {
+  -webkit-animation: arrowUp 1s 3;
+          animation: arrowUp 1s 3;
+  color: #4BCAFF;
+  font-size: 20px;
+  left: 18px;
+  position: absolute;
+  top: 6px;
+}
+@-webkit-keyframes arrowUp {
+  0% {
+    top: 6px;
+  }
+  50% {
+    top: 0px;
+  }
+  100% {
+    top: 10px;
+  }
+}
+@keyframes arrowUp {
+  0% {
+    top: 6px;
+  }
+  50% {
+    top: 0px;
+  }
+  100% {
+    top: 10px;
+  }
 }
 button#toTop:focus,
 button#toTop:active {
